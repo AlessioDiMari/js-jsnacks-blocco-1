@@ -22,4 +22,15 @@ for ( let i = 0; i < 10; i++){
     numbers.push(singleNumber);
 }
 
+// Sommo i vari elementi dell'array tramite un ciclo for
 
+// Dichiaro la variabile "sum" come somma degli elementi
+let sum = 0;
+
+for( let j = 0; j < numbers.length; j++){
+    sum = sum + numbers[j];
+}
+
+
+// Visualizzo in pagina la somma degli elementi
+document.getElementById("somma").innerHTML = "La somma é : " + sum;
