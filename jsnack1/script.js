@@ -21,3 +21,23 @@ console.log(firstLength);
 
 const secondLength = secondWord.length;
 console.log(secondLength);
+
+// Verifico quale parola é più lunga
+if(firstLength > secondLength){
+    // La prima parola è più lunga
+    document.getElementById("risultato").innerHTML = "La prima parola è la più lunga"
+    document.getElementById("prima-parola").innerHTML = firstWord;
+    document.getElementById("seconda-parola").innerHTML = secondWord;
+
+} else if(firstLength < secondLength){
+    // La seconda parola è la più lunga
+    document.getElementById("risultato").innerHTML = "La seconda parola è la più lunga"
+    document.getElementById("seconda-parola").innerHTML = secondWord;
+    document.getElementById("prima-parola").innerHTML = firstWord;
+
+} else {
+    // Le parole hanno lunghezza uguale
+    document.getElementById("risultato").innerHTML = "Le parole hanno la stessa lunghezza"
+    document.getElementById("prima-parola").innerHTML = firstWord;
+    document.getElementById("seconda-parola").innerHTML = secondWord;
+}
