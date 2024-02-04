@@ -20,3 +20,17 @@ for ( let i = 0; i < 6; i++){
     }
 }
 console.log(oddsNumbers);
+
+// Stampo i numeri dispari inseriti nell'array
+
+// Dichiaro la lista non ordinata
+const oddsList = document.getElementById("list-numbers");
+
+for ( let j = 0; j < oddsNumbers.length; j++){
+    // Creo un "li" per ogni elemento dispari nell'array
+    const oddNumber = document.createElement("li");
+    oddNumber.innerText = oddsNumbers[j];
+
+    // Stampo in pagina negli "li" i numeri dispari
+    oddsList.append(oddNumber);
+}
